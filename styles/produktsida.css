@@ -1,0 +1,43 @@
+
+.portfolio {
+    width: 100%;
+    margin: 100px 0;
+}
+
+.portfolio .Januari {
+    flex-direction: row-reverse;
+    background-color: rgba(0, 0, 0, 0.03);
+    padding: 48px;
+    border-radius: 4px;
+}
+
+.portfolio .Februari {
+    flex-direction: row-reverse;
+    background-color: rgba(0, 0, 0, 0.03);
+    padding: 48px;
+    border-radius: 4px;
+}
+
+.portfolio .Mars {
+    flex-direction: row-reverse;
+    background-color: rgba(0, 0, 0, 0.03);
+    padding: 48px;
+    border-radius: 4px;
+}
+
+.portfolio .April  {
+    flex-direction: row-reverse;
+    background-color: rgba(0, 0, 0, 0.03);
+    padding: 48px;
+    border-radius: 4px;
+    
+}
+
+.portfolio .Maj  {
+    flex-direction: row-reverse;
+    background-color: rgba(0, 0, 0, 0.03);
+    padding: 48px;
+    border-radius: 4px;
+    
+}
+
