@@ -26,7 +26,7 @@ Commit regler:
 Uppdelning av pages:
 
 Första sidan/Hemsida ansvaras av: Angelika
--hero
+-herosection
 -3-6  bilder på exempel av produkter
 -introduktionstext om våra produkter (och -företaget), tre kundrecensioner
 
