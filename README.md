@@ -1,7 +1,7 @@
 Verksamhetsbeskrivning - Din Sten!
 
 
-På vår hemsida erbjuder vi ett brett utbud av månadsstenar, noggrant utvalda för att spegla varje månads unika energi och symbolik. Varje sten har sin egen betydelse och representerar de unika egenskaper och krafter som är förknippade med respektive månad. Våra månadsstenar är perfekta som personliga smycken, meningsfulla gåvor eller samlarobjekt.
+På vår hemsida hittar du ett exklusivt utbud av guldsmycken med månadsstenar, noggrant utvalda för att spegla varje månads unika energi och symbolik. Varje sten bär sin egen betydelse och representerar de särskilda egenskaper och krafter som är kopplade till just den månaden. Dessa smycken är inte bara personliga och vackra, utan även meningsfulla gåvor och eftertraktade samlarobjekt – perfekta för att uttrycka personlig stil och symbolik.
 
 Vi strävar efter att ge våra kunder en personlig och inspirerande upplevelse genom att erbjuda högkvalitativa stenar med vacker design och äkta symbolik. Oavsett om du letar efter en månadssten för att fira din födelsemånad, eller för att ge någon en minnesvärd present, hjälper vi dig att hitta den perfekta stenen som bär på djupare mening.
 
@@ -26,7 +26,7 @@ Commit regler:
 Uppdelning av pages:
 
 Första sidan/Hemsida ansvaras av: Angelika
--hero
+-herosection
 -3-6  bilder på exempel av produkter
 -introduktionstext om våra produkter (och -företaget), tre kundrecensioner
 
@@ -42,4 +42,7 @@ Produkter ansvaras av: Jamour
 
 Kontakta oss ansvaras av: Nina
 -Form, telefonnummer, email, insta, adress till butiker, karta, Q&A
+
+Gemensam kodning: 
+Gruppen tillsammans skapar och tar fram en header, footer och general styling.
 
