@@ -1,7 +1,7 @@
 body,
 html {
   margin: 0;
-  font-family: sans-serif;
+  font-family:Georgia, 'Times New Roman', Times, serif
   font-size: 1em;
   color: #333;
   background-color: transparent;
@@ -12,25 +12,28 @@ html {
   box-sizing: border-box;
 }
 
+
 .header {
   width: 100%;
   display: flex;
   padding: 12px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  align-items: center;
 }
 
 .header .logo {
-  filter: invert(1);
-  padding: 12px;
+  padding-left: 0;
+  padding-right: 0;
   display: flex;
   align-self: center;
 }
 
 .header .menu {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   width: 100%;
-  align-items: center;
+  padding-left: 0;
+
 }
 
 .header .menu ul {
@@ -52,7 +55,7 @@ html {
 }
 
 .header .menu ul li a:hover {
-  text-decoration: underline;
+  
 }
 
 .header .menu ul li .icon {
@@ -69,67 +72,47 @@ html {
 
 
 
+
+
 .footer {
-  background-color: #a099a8;
+  background-color: rgb(217, 198, 198);
   width: 100%;
-  display: grid;
-  grid-row: auto;
-  padding: 48px;
-  font-style: italic;
-}
-
-.footer .group h3 {
-  color: silver;
-  font-weight: 400;
-  text-transform: uppercase;
-  font-size: 0.85em;
-}
-
-.footer .group ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-.footer .group ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 1.2em;
-  line-height: 2;
-}
-
-.footer .group .copyright {
-  color: silver;
-  font-size: 0.8em;
-}
-
-.footer .group .links ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
   display: flex;
-  gap: 12px;
-  
+  grid-row: auto;
+  padding: 25px;
+
+  justify-content: center;
+
 }
 
-.footer .group .links ul li a {
-  font-size: 2em;
-  
+.logopic {
+    
+    height: 150px;
+    width: 230px;
+    
 }
 
-.footer .group a {
-  transition: color 0.2s ease;
+.icons {
+    width: 30px;
+    height: 30px;
+    
+
+    /* grid-template-columns: repeat(auto-fill:minmax(250px:nfr)); */
+
 }
 
-.footer .group a:hover {
-  color: gray;
+.iconer {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 0;
 }
 
-.footer .group .links ul li:first-child::after {
-  content: "·";
-  color: #fff;
-  padding-left: 12px;
-}
+ li {
+
+    list-style-type: none;
+ }
 
 .container {
   width: 75%;
