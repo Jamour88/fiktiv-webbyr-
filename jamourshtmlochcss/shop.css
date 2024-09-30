@@ -1,0 +1,292 @@
+
+.portfolio {
+    width: 100%;
+    margin: 100px 0;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+
+.portfolio section {
+    flex: 0 0 calc(33.33% - 20px); 
+    max-width: calc(33.33% - 20px); 
+    border: 1px solid #aa924f; 
+    padding: 15px; 
+    box-sizing: border-box; 
+}
+
+img {
+    max-width: 100%; 
+    height: auto; 
+}
+
+
+.portfolio img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease; /* Lägger till en övergångseffekt */
+
+}
+
+.portfolio img:hover {
+    transform: scale(2.1); /* Förstorar bilden till 110% av dess ursprungliga storlek */
+}
+
+
+
+.portfolio .Januari {
+    flex-direction: row-reverse;
+    background-color: rgba(0, 0, 0, 0.03);
+    padding: 48px;
+    border-radius: 4px;
+}
+
+.portfolio .Februari {
+    flex-direction: row-reverse;
+    background-color: rgba(0, 0, 0, 0.03);
+    padding: 48px;
+    border-radius: 4px;
+}
+
+.portfolio .Mars {
+    flex-direction: row-reverse;
+    background-color: rgba(0, 0, 0, 0.03);
+    padding: 48px;
+    border-radius: 4px;
+}
+
+.portfolio .April  {
+    flex-direction: row-reverse;
+    background-color: rgba(0, 0, 0, 0.03);
+    padding: 48px;
+    border-radius: 4px;
+    
+}
+
+.portfolio .Maj  {
+    flex-direction: row-reverse;
+    background-color: rgba(0, 0, 0, 0.03);
+    padding: 48px;
+    border-radius: 4px;
+    
+}
+
+.portfolio .Juni  {
+    flex-direction: row-reverse;
+    background-color: rgba(0, 0, 0, 0.03);
+    padding: 48px;
+    border-radius: 4px;
+    
+}
+
+.portfolio .Juli  {
+    flex-direction: row-reverse;
+    background-color: rgba(0, 0, 0, 0.03);
+    padding: 48px;
+    border-radius: 4px;
+    
+}
+
+.portfolio .Augusti  {
+    flex-direction: row-reverse;
+    background-color: rgba(0, 0, 0, 0.03);
+    padding: 48px;
+    border-radius: 4px;
+    
+}
+
+.portfolio .September  {
+    flex-direction: row-reverse;
+    background-color: rgba(0, 0, 0, 0.03);
+    padding: 48px;
+    border-radius: 4px;
+    
+}
+
+.portfolio .Oktober  {
+    flex-direction: row-reverse;
+    background-color: rgba(0, 0, 0, 0.03);
+    padding: 48px;
+    border-radius: 4px;
+    
+}
+
+.portfolio .November  {
+    flex-direction: row-reverse;
+    background-color: rgba(0, 0, 0, 0.03);
+    padding: 48px;
+    border-radius: 4px;
+    
+}
+
+.portfolio .December  {
+    flex-direction: row-reverse;
+    background-color: rgba(0, 0, 0, 0.03);
+    padding: 48px;
+    border-radius: 4px;
+    
+}
+
+
+
+.carousel-container {
+    position: relative;
+    max-width: 80%;
+    margin: auto;
+    overflow: hidden;
+    border: 1px solid #aa924f;
+}
+
+.carousel {
+    display: flex;
+    animation: slide-animation 7s infinite;
+
+}
+
+.carousel-slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.carousel-slide img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+/* Denna behövs för att skapa rullande karusell */
+@keyframes slide-animation {
+    0% { transform: translateX(0); }
+    33% { transform: translateX(0); }
+    38% { transform: translateX(-100%); }
+    66% { transform: translateX(-100%); }
+    71% { transform: translateX(-200%); }
+    100% { transform: translateX(-200%); }
+}
+
+.read-more {
+    background-color: #aa924f;
+    color: #FFF;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 2px;
+    padding: 7px 20px;
+    margin-top: 8px;
+    display: inline-block;
+    transition: background-color 0.2s ease;
+}
+
+.read-more:hover {
+    background-color: #1e58a9; /* Ändra bakgrundsfärg vid hovring */
+    color: #ffffff; /* Ändra textfärg vid hovring */
+}
+
+
+
+/* Media query för surfplattor (768px till 1024px) */
+@media screen and (max-width: 1024px) {
+    .portfolio section {
+      flex: 0 0 calc(50% - 20px); /* Två kolumner på surfplattor */
+      max-width: calc(50% - 20px);
+    }
+  
+    .container {
+      width: 90%;
+    }
+  
+    .menu ul {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .menu ul li {
+      margin-bottom: 10px;
+    }
+  }
+
+
+  
+  /* Media query för mobiler (mindre än 768px) */
+  @media screen and (max-width: 768px) {
+    .portfolio {
+      flex-direction: column; /* En kolumn på mobiler */
+    }
+  
+    .portfolio section {
+      flex: 0 0 100%; /* Full bredd */
+      max-width: 100%;
+    }
+  
+    .container {
+      width: 95%;
+    }
+  
+    .menu ul {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .menu ul li {
+      margin-bottom: 10px;
+    }
+  }
+
+
+  .icontext {
+    display: flex;               /* Använd flexbox för att placera element bredvid varandra */
+    flex-wrap: wrap;            /* Gör så att elementen går till nästa rad om det inte finns tillräckligt med plats */
+    justify-content: left;     
+}
+
+.icontext img {
+    width: 25px;               
+    height: auto;               /* Behåll proportionerna */
+    margin: 5px;               /* Lägger till lite utrymme runt bilderna */
+}
+
+.icontext p {
+    font-size: 8px;
+    color: rgb(66, 111, 236);
+    text-align: left;         
+    margin-top: 0px;          
+    width: 100%;                /* Gör så att texten tar hela bredden av sitt föräldraelement */
+}
+
+.discount-banner {
+    position: fixed;             /* Gör bannern fast på skärmen */
+    right: 0px;                /* ingen avstånd från höger kant */
+    top: 80%;                  /* Avstånd från toppen */
+    background-color: #a19669; /* Bakgrundsfärg (gul) */
+    color: #0f0101;                /* Textfärg (svart) */
+    padding: 5px 10px;        /* Inre marginaler */
+    border-radius: 5px;        /* Rundade hörn */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Lätt skugga för djup */
+    z-index: 1000;             /* Säkerställ att den är över andra element */
+    font-size: 10px;           /* Textstorlek */
+    font-weight: bold;         /* Fet text */
+}
+
+.discount-banner:hover {
+    background-color: #1406d6; /* Ändra till en annan färg vid hover (orange) */
+    cursor: pointer;           /* Ändra muspekaren till en hand */
+    color: #FFF;
+}
+
+.contact-form {
+    display: flex;                     /* Använd flexbox för att arrangera elementen */
+    flex-direction: column;           /* Arrangera elementen vertikalt */
+    margin-top: 10px;                 /* Marginal ovanför formuläret */
+}
+
+.contact-form label {
+    font-size: 14px;                  /* Textstorlek för labeln */
+    margin-bottom: 5px;               /* Marginal nedanför labeln */
+}
+
+
+
+
+
