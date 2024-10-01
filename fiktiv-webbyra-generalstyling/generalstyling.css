@@ -1,7 +1,7 @@
 body,
 html {
   margin: 0;
-  font-family:Georgia, 'Times New Roman', Times, serif
+  font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 1em;
   color: #333;
   background-color: transparent;
@@ -43,8 +43,7 @@ html {
   display: flex;
 }
 
-.header .menu ul li {
-}
+.header .menu ul li {}
 
 .header .menu ul li a {
   color: inherit;
@@ -54,8 +53,45 @@ html {
 
 }
 
-.header .menu ul li a:hover {
-  
+.menu a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #333;
+  padding: 10px 0;
+  position: relative;
+  display: inline-block;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect */
+.menu a:hover {
+  color: #000;
+  /* Optional: changes link color on hover */
+}
+
+/* Underline effect */
+.menu a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  /* Color of the underline */
+  transition: width 0.3s ease-in-out;
+}
+
+.menu a:hover::after {
+  width: 100%;
+}
+
+/* Styling for the icons */
+.icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
 }
 
 .header .menu ul li .icon {
@@ -86,33 +122,33 @@ html {
 }
 
 .logopic {
-    
-    height: 150px;
-    width: 230px;
-    
+
+  height: 150px;
+  width: 230px;
+
 }
 
 .icons {
-    width: 30px;
-    height: 30px;
-    
+  width: 30px;
+  height: 30px;
 
-    /* grid-template-columns: repeat(auto-fill:minmax(250px:nfr)); */
+
+  /* grid-template-columns: repeat(auto-fill:minmax(250px:nfr)); */
 
 }
 
 .iconer {
-    display: flex;
-    justify-content: center;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 0;
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 0;
 }
 
- li {
+li {
 
-    list-style-type: none;
- }
+  list-style-type: none;
+}
 
 .container {
   width: 75%;
