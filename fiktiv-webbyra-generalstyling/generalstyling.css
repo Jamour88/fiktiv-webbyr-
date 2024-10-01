@@ -5,14 +5,12 @@ html {
   font-size: 1em;
   color: #333;
   background-color: transparent;
-  line-height: 1;
+  line-height: 1.5;
 }
 
 * {
   box-sizing: border-box;
 }
-
-
 
 .header {
   width: 100%;
@@ -20,6 +18,7 @@ html {
   padding: 12px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   align-items: center;
+  justify-content: space-between;
 }
 
 .header .logo {
@@ -31,7 +30,8 @@ html {
 .header .menu {
   display: flex;
   justify-content: center; 
-  width: 100%;
+  margin-left: 85px;
+  flex-grow: 1; 
 }
 
 .header .menu ul {
@@ -39,6 +39,11 @@ html {
   margin: 0;
   padding: 0;
   display: flex;
+  justify-content: center; 
+}
+
+.header .menu ul li {
+  margin: 0 15px; 
 }
 
 <<<<<<< HEAD
@@ -51,124 +56,62 @@ html {
   text-decoration: none;
   padding: 12px 24px;
   display: flex;
-<<<<<<< HEAD
-
 }
 
-.menu a {
-  text-decoration: none;
-  font-size: 18px;
-  color: #333;
-  padding: 10px 0;
-  position: relative;
-  display: inline-block;
-  transition: color 0.3s ease;
+.header .menu ul li a:hover {
+  text-decoration: underline;
 }
-
-/* Hover effect */
-.menu a:hover {
-  color: #000;
-  /* Optional: changes link color on hover */
-}
-
-/* Underline effect */
-.menu a::after {
-  content: "";
-  position: absolute;
-  width: 0%;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #000;
-  /* Color of the underline */
-  transition: width 0.3s ease-in-out;
-}
-
-.menu a:hover::after {
-  width: 100%;
-}
-
-/* Styling for the icons */
-.icon {
-  display: inline-block;
-  width: 24px;
-  height: 24px;
-  margin-right: 8px;
-=======
->>>>>>> 5be94d06bc35516683eefce468a8062c9e874ecb
-}
-
-.header .menu ul li .icon {
-  height: 20px;
-  width: 5px;
-  background-size: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  display: flex;
-  align-self: center;
-  margin-right: 6px;
-}
-
 
 .header-icons {
   width: 25px;
-  display: flex;
+  margin-left: 10px;
 }
 
 .ikoner {
   display: flex;
-  margin-top: 8px;
-  margin-left: 140px;
-
-}
-#search {
-margin-right: 7px;
+  align-items: center;
+  margin-right: 20px;
+  margin-left: auto; 
 }
 
-
- a:hover {
-  text-decoration: underline;
-  }
 
 .footer {
   background-color: rgb(217, 198, 198);
-  width: 100%;
-  display: flex;
-  grid-row: auto;
   padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
 
-  justify-content: center;
-
+.footer .logo {
+  margin-bottom: 15px;
 }
 
 .logopic {
-
   height: 150px;
   width: 230px;
-
 }
 
 .icons {
   width: 30px;
   height: 30px;
-
-
-  /* grid-template-columns: repeat(auto-fill:minmax(250px:nfr)); */
-
 }
 
 .iconer {
   display: flex;
-  justify-content: center;
   justify-content: space-between;
   align-items: center;
   padding-left: 0;
+  list-style-type: none; 
 }
 
-li {
-
-  list-style-type: none;
+.copyright {
+  margin-top: 15px;
+  font-size: 0.9em;
+  color: #666;
 }
+
 
 .container {
   width: 75%;
