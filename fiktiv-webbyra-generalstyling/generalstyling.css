@@ -1,18 +1,16 @@
 body,
 html {
   margin: 0;
-  font-family:Georgia, 'Times New Roman', Times, serif
+  font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 1em;
   color: #333;
   background-color: transparent;
-  line-height: 1;
+  line-height: 1.5;
 }
 
 * {
   box-sizing: border-box;
 }
-
-
 
 .header {
   width: 100%;
@@ -20,6 +18,7 @@ html {
   padding: 12px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   align-items: center;
+  justify-content: space-between;
 }
 
 .header .logo {
@@ -31,7 +30,8 @@ html {
 .header .menu {
   display: flex;
   justify-content: center; 
-  width: 100%;
+  margin-left: 85px;
+  flex-grow: 1; 
 }
 
 .header .menu ul {
@@ -39,6 +39,11 @@ html {
   margin: 0;
   padding: 0;
   display: flex;
+  justify-content: center; 
+}
+
+.header .menu ul li {
+  margin: 0 15px; 
 }
 
 .header .menu ul li a {
@@ -48,77 +53,60 @@ html {
   display: flex;
 }
 
-.header .menu ul li .icon {
-  height: 20px;
-  width: 5px;
-  background-size: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  display: flex;
-  align-self: center;
-  margin-right: 6px;
+.header .menu ul li a:hover {
+  text-decoration: underline;
 }
-
 
 .header-icons {
   width: 25px;
-  display: flex;
+  margin-left: 10px;
 }
 
 .ikoner {
   display: flex;
-  margin-top: 8px;
-  margin-left: 140px;
-
-}
-#search {
-margin-right: 7px;
+  align-items: center;
+  margin-right: 20px;
+  margin-left: auto; 
 }
 
-
- a:hover {
-  text-decoration: underline;
-  }
 
 .footer {
   background-color: rgb(217, 198, 198);
-  width: 100%;
-  display: flex;
-  grid-row: auto;
   padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
 
-  justify-content: center;
-
+.footer .logo {
+  margin-bottom: 15px;
 }
 
 .logopic {
-    
-    height: 150px;
-    width: 230px;
-    
+  height: 150px;
+  width: 230px;
 }
 
 .icons {
-    width: 30px;
-    height: 30px;
-    
-
-    /* grid-template-columns: repeat(auto-fill:minmax(250px:nfr)); */
-
+  width: 30px;
+  height: 30px;
 }
 
 .iconer {
-    display: flex;
-    justify-content: center;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 0;
+  list-style-type: none; 
 }
 
- li {
+.copyright {
+  margin-top: 15px;
+  font-size: 0.9em;
+  color: #666;
+}
 
-    list-style-type: none;
- }
 
 .container {
   width: 75%;
