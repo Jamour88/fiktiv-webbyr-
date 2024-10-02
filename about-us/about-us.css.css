@@ -87,25 +87,24 @@ p {
 
 .portfolio-images img {
     width: 100%;
-    height: auto; /* Ändrat här för att behålla bildens proportioner */
-    object-fit: cover; /* Ändrat till 'cover' för att klippa i rätt förhållande */
+    height: auto;
+    object-fit: cover;
 }
 
-/* Ny margin-bottom för portfoliasektionen */
 .portfolio {
-    margin-bottom: 50px; /* Lägg till 10px mellanrum till footern */
+    margin-bottom: 50px;
 }
 
 /* Media queries - Tablet */
 @media screen and (max-width: 1024px) {
     .info-columns {
-        flex-direction: row; /* Håller kolumnerna bredvid varandra */
-        gap: 15px; /* Mindre mellanrum */
+        flex-direction: row;
+        gap: 15px;
     }
 
     .company-info,
     .journey {
-        flex: 1 1 45%; /* Justera kolumnerna så att de minskar i storlek */
+        flex: 1 1 45%;
     }
 
     h1 {
@@ -148,7 +147,7 @@ p {
     }
 
     .info-columns {
-        flex-direction: column; /* Staplar kolumnerna i mobil-läge */
+        flex-direction: column;
     }
 
     .team-photos,
@@ -163,7 +162,7 @@ p {
 
     .portfolio-images img {
         width: 100%;
-        height: auto; /* För att behålla bildens proportioner */
-        object-fit: contain; /* För att visa hela bilden utan att klippa */
+        height: auto;
+        object-fit: contain;  
     }
 }
