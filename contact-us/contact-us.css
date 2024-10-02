@@ -1,4 +1,6 @@
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-weight: 300;
     text-align: center;
 }
@@ -11,7 +13,6 @@ h1 {
     display: flex;
     align-items: stretch;
     padding-bottom: 20px;
-   
 }
 
 #firstimage {
@@ -45,6 +46,7 @@ p {
     font-size: 24px;
     margin-bottom: 0;
 }
+
 input[type="email"] {
     border: none;
     outline: none;
@@ -62,7 +64,7 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
     background-color: white;
-    color: black;  
+    color: black;
 }
 
 .contacts {
@@ -72,15 +74,12 @@ input[type="submit"]:hover {
     justify-content: space-around;
     align-items: center;
     text-align: center;
-    
 }
 
 .contact-img {
-    margin-top: 35px;
     width: 30px;
     height: 30px;
 }
-
 
 .contacts a {
     color: black;
@@ -88,9 +87,9 @@ input[type="submit"]:hover {
 }
 
 
-
 #p1 {
     margin: 0;
+    margin-top: 18px;
 }
 
 #p2 {
@@ -98,10 +97,10 @@ input[type="submit"]:hover {
 }
 
 #adress {
-margin-bottom: 0;
+    margin-top: 18px;
+    margin-bottom: 0;
 }
 
-#contact-us p {
-    margin: 0;
-    padding: 0;
+#contact-id {
+    margin-top: 5px;
 }
