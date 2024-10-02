@@ -66,8 +66,37 @@ h6 {
   font-size: 14px;
 }
 
-.header .menu ul li a:hover {
-  text-decoration: underline;
+.menu a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #333;
+  padding: 10px 0;
+  position: relative;
+  display: inline-block;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect */
+.menu a:hover {
+  color: #000;
+  /* Optional: changes link color on hover */
+}
+
+/* Underline effect */
+.menu a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  /* Color of the underline */
+  transition: width 0.3s ease-in-out;
+}
+
+.menu a:hover::after {
+  width: 100%;
 }
 
 .header-icons {
