@@ -242,9 +242,8 @@ input[type="radio"] {
     text-align: center;
 }
 
-#review-wrapper img {
-    width: 30%;
-    opacity: 0.75;
+.star {
+    font-size: 20px;
 }
 
 .name, .review-text {
@@ -308,7 +307,7 @@ input[type="radio"] {
 }
 
 /* behövs för att instagram bilderna lägger sig på en rad, hellre annan lösning */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 820px) {
 
     #instragram-img-wrapper {
         width: 100vw;
