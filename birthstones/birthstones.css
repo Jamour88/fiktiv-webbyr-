@@ -63,28 +63,7 @@ html {
     transition: color 0.3s ease;
 }
 
-/* Hover effect */
-.menu a:hover {
-    color: #000;
-    /* Optional: changes link color on hover */
-}
 
-/* Underline effect */
-.menu a::after {
-    content: "";
-    position: absolute;
-    width: 0%;
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: #000;
-    /* Color of the underline */
-    transition: width 0.3s ease-in-out;
-}
-
-.menu a:hover::after {
-    width: 100%;
-}
 
 /* Styling for the icons */
 .icon {
