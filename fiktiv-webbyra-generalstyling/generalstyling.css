@@ -77,13 +77,13 @@ h6 {
 }
 
 /* Hover effect */
-.menu a:hover {
+.underline-hover a:hover {
   color: #000;
   /* Optional: changes link color on hover */
 }
 
 /* Underline effect */
-.menu a::after {
+.underline-hover a::after {
   content: "";
   position: absolute;
   width: 0%;
@@ -95,7 +95,7 @@ h6 {
   transition: width 0.3s ease-in-out;
 }
 
-.menu a:hover::after {
+.underline-hover a:hover::after {
   width: 100%;
 }
 
