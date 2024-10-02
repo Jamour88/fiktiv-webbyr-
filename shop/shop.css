@@ -1,4 +1,3 @@
-
 .portfolio {
     width: 100%;
     margin: 100px 0;
@@ -13,26 +12,21 @@
 .portfolio section {
     flex: 0 0 calc(33.33% - 20px); 
     max-width: calc(33.33% - 20px); 
-    border: 1px solid #aa924f; 
+    border: 0.1px solid rgb(238, 208, 208); 
     padding: 15px; 
     box-sizing: border-box; 
-}
-
-img {
-    max-width: 100%; 
-    height: auto; 
 }
 
 
 .portfolio img {
     max-width: 100%;
     height: auto;
-    transition: transform 0.3s ease; /* Lägger till en övergångseffekt */
+    transition: transform 0.3s ease; /* f.k övergångseffekt */
 
 }
 
 .portfolio img:hover {
-    transform: scale(2.1); /* Förstorar bilden till 110% av dess ursprungliga storlek */
+    transform: scale(2.1); /* Förstorar bilderna i boxarna */
 }
 
 
@@ -130,14 +124,12 @@ img {
     
 }
 
-
-
 .carousel-container {
     position: relative;
     max-width: 80%;
     margin: auto;
     overflow: hidden;
-    border: 1px solid #aa924f;
+    border: 0.1px solid rgb(238, 208, 208); ;
 }
 
 .carousel {
@@ -157,7 +149,7 @@ img {
     vertical-align: middle;
 }
 
-/* Denna behövs för att skapa rullande karusell */
+/* skapar rullande karusell */
 @keyframes slide-animation {
     0% { transform: translateX(0); }
     33% { transform: translateX(0); }
@@ -168,8 +160,8 @@ img {
 }
 
 .read-more {
-    background-color: #aa924f;
-    color: #FFF;
+    background-color:rgb(238, 208, 208); ;
+    color: #333;
     font-weight: bold;
     text-decoration: none;
     border-radius: 2px;
@@ -180,8 +172,8 @@ img {
 }
 
 .read-more:hover {
-    background-color: #1e58a9; /* Ändra bakgrundsfärg vid hovring */
-    color: #ffffff; /* Ändra textfärg vid hovring */
+    background-color: #1e58a9; 
+    color: #f4f4f4; 
 }
 
 
@@ -259,7 +251,7 @@ img {
     position: fixed;             /* Gör bannern fast på skärmen */
     right: 0px;                /* ingen avstånd från höger kant */
     top: 80%;                  /* Avstånd från toppen */
-    background-color: #a19669; /* Bakgrundsfärg (gul) */
+    background-color: rgb(238, 208, 208); 
     color: #0f0101;                /* Textfärg (svart) */
     padding: 5px 10px;        /* Inre marginaler */
     border-radius: 5px;        /* Rundade hörn */
@@ -270,23 +262,18 @@ img {
 }
 
 .discount-banner:hover {
-    background-color: #1406d6; /* Ändra till en annan färg vid hover (orange) */
-    cursor: pointer;           /* Ändra muspekaren till en hand */
+    background-color: #rgb (238, 208, 208); 
+    cursor: pointer;           /* Ändrar muspekaren till en hand */
     color: #FFF;
 }
 
 .contact-form {
     display: flex;                     /* Använd flexbox för att arrangera elementen */
     flex-direction: column;           /* Arrangera elementen vertikalt */
-    margin-top: 10px;                 /* Marginal ovanför formuläret */
+    margin-top: 10px;                
 }
 
 .contact-form label {
-    font-size: 14px;                  /* Textstorlek för labeln */
-    margin-bottom: 5px;               /* Marginal nedanför labeln */
+    font-size: 14px;                
+    margin-bottom: 5px;               
 }
-
-
-
-
-
