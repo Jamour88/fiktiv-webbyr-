@@ -1,13 +1,11 @@
 .portfolio {
     width: 100%;
     margin: 100px 0;
-
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 20px;
 }
-
 
 .portfolio section {
     flex: 0 0 calc(33.33% - 20px); 
@@ -17,19 +15,15 @@
     box-sizing: border-box; 
 }
 
-
 .portfolio img {
     max-width: 100%;
     height: auto;
     transition: transform 0.3s ease; /* f.k övergångseffekt */
-
 }
 
 .portfolio img:hover {
     transform: scale(2.1); /* Förstorar bilderna i boxarna */
 }
-
-
 
 .portfolio .Januari {
     flex-direction: row-reverse;
@@ -56,8 +50,7 @@
     flex-direction: row-reverse;
     background-color: rgba(0, 0, 0, 0.03);
     padding: 48px;
-    border-radius: 4px;
-    
+    border-radius: 4px;  
 }
 
 .portfolio .Maj  {
@@ -65,7 +58,6 @@
     background-color: rgba(0, 0, 0, 0.03);
     padding: 48px;
     border-radius: 4px;
-    
 }
 
 .portfolio .Juni  {
@@ -73,7 +65,6 @@
     background-color: rgba(0, 0, 0, 0.03);
     padding: 48px;
     border-radius: 4px;
-    
 }
 
 .portfolio .Juli  {
@@ -81,7 +72,6 @@
     background-color: rgba(0, 0, 0, 0.03);
     padding: 48px;
     border-radius: 4px;
-    
 }
 
 .portfolio .Augusti  {
@@ -89,7 +79,6 @@
     background-color: rgba(0, 0, 0, 0.03);
     padding: 48px;
     border-radius: 4px;
-    
 }
 
 .portfolio .September  {
@@ -97,7 +86,6 @@
     background-color: rgba(0, 0, 0, 0.03);
     padding: 48px;
     border-radius: 4px;
-    
 }
 
 .portfolio .Oktober  {
@@ -105,15 +93,13 @@
     background-color: rgba(0, 0, 0, 0.03);
     padding: 48px;
     border-radius: 4px;
-    
 }
 
 .portfolio .November  {
     flex-direction: row-reverse;
     background-color: rgba(0, 0, 0, 0.03);
     padding: 48px;
-    border-radius: 4px;
-    
+    border-radius: 4px; 
 }
 
 .portfolio .December  {
@@ -121,7 +107,6 @@
     background-color: rgba(0, 0, 0, 0.03);
     padding: 48px;
     border-radius: 4px;
-    
 }
 
 .carousel-container {
@@ -134,8 +119,7 @@
 
 .carousel {
     display: flex;
-    animation: slide-animation 7s infinite;
-
+    animation: slide-animation 8s infinite;
 }
 
 .carousel-slide {
@@ -149,8 +133,7 @@
     vertical-align: middle;
 }
 
-/* skapar rullande karusell */
-@keyframes slide-animation {
+@keyframes slide-animation {  /* skapar rullande karusell */
     0% { transform: translateX(0); }
     33% { transform: translateX(0); }
     38% { transform: translateX(-100%); }
@@ -176,8 +159,6 @@
     color: #f4f4f4; 
 }
 
-
-
 /* Media query för surfplattor (768px till 1024px) */
 @media screen and (max-width: 1024px) {
     .portfolio section {
@@ -199,8 +180,6 @@
     }
   }
 
-
-  
   /* Media query för mobiler (mindre än 768px) */
   @media screen and (max-width: 768px) {
     .portfolio {
@@ -225,7 +204,6 @@
       margin-bottom: 10px;
     }
   }
-
 
   .icontext {
     display: flex;               /* Använd flexbox för att placera element bredvid varandra */
@@ -262,7 +240,7 @@
 }
 
 .discount-banner:hover {
-    background-color: #rgb (238, 208, 208); 
+    background-color: #1e58a9; 
     cursor: pointer;           /* Ändrar muspekaren till en hand */
     color: #FFF;
 }
@@ -276,4 +254,27 @@
 .contact-form label {
     font-size: 14px;                
     margin-bottom: 5px;               
+}
+
+h2 {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* Skapa pseudo-elementet för understrykningen */
+h2::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    transition: width 0.3s ease;
+}
+
+/* När vi hovrar ökar vi bredden på understrykningen */
+h2:hover::after {
+    width: 100%;
 }
