@@ -1,0 +1,147 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #ffffff;
+    /*padding: 20px;
+    margin: 20px; */
+    color: #333;
+}
+
+.block-pic {
+    width: 100%;
+    height: 150px;
+    object-fit: cover; /* Se till att bilden fyller utrymmet */
+  
+}
+
+
+
+.about-container {
+    max-width: 1200px;
+    margin: 0 50px; 
+    }
+    
+
+
+h1, h2 {
+    text-align: center;
+    color: #222;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.info-columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.company-info, .journey {
+    flex: 1;
+    padding: 20px;
+    background-color: #f4f4f4;
+
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 800px; /* Bättre kontroll över textbredd */
+}
+
+.team-photos, .portfolio-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.team-member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.team-photos img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.portfolio-images img {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 100px;
+    object-fit: cover;
+}
+
+/* Media queries - Tablet */
+@media screen and (max-width: 1024px) {
+    .info-columns {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    p {
+        font-size: 1.1em;
+    }
+
+    .team-photos {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+}
+
+/* Media queries - Mobile */
+@media screen and (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    .team-photos, .portfolio-images {
+        grid-template-columns: 1fr;
+    }
+
+    .team-photos img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .portfolio-images img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+}
