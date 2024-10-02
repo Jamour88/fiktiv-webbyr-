@@ -9,18 +9,12 @@ a {
     color: #333;
 }
 
-header {
-    -webkit-backdrop-filter: blur(2px);
-    backdrop-filter: blur(2px);
-    position: absolute !important;
-}
 
 #hero {
-    z-index: -1;
     position: relative;
     display: flex;
     width: 100%;
-    max-width: 1400px;
+    /* max-width: 1400px; */
     height: 500px;
     justify-content: center;
     margin: 0 auto;
@@ -35,18 +29,28 @@ header {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    opacity: 0.8;
 }
 
 #hero p {
     position: absolute;
-    font-size: 26px;
+    font-size: 30px;
     text-align: center;
-    z-index: 1;
-    padding: 100px 0 30px 0;
+    padding: 90px 0 50px 0;
     align-self: flex-end;
     width: 100%;
-    background: rgb(185,185,185);
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.253) 0%, rgba(253,187,45,0) 100%);
+}
+
+#hero a {
+    color: black; /* ska skillja sig från övriga färg palletten */
+    display: inline-block;
+    transition: transform 0.5s ease-in-out;
+}
+
+#hero a:hover {
+    scale: 1.1;
+    transition-duration: transform 0.5s ease-in-out;
 }
 
 .gallery {
