@@ -43,7 +43,9 @@ a {
 }
 
 #hero a {
-    color: black; /* ska skillja sig från övriga färg palletten */
+    /* color: rgb(180, 67, 38);  */
+    color: #333; /* ska skillja sig från övriga färg palletten */
+    
     display: inline-block;
     transition: transform 0.5s ease-in-out;
 }
