@@ -34,16 +34,19 @@ Commit regler:
 
 Uppdelning av pages:
 
-Första sidan/Hemsida ansvaras av: Angelika
+Angelika: Landing page
 
-Om oss ansvaras av: Emilia
+Emilia: Om oss
 
-Om stenar ansvaras av: Melody
+Melody: Om månadsstenar
 
-Produkter ansvaras av: Jamour
+Jamour: Shop
 
-Kontakta oss ansvaras av: Nina
+Nina: Kontakta oss
 
 Gemensam kodning: 
-Gruppen tillsammans skapar och tar fram en header, footer och general styling samt löpande uppdatering av READme.
+Gruppen har tillsammans skapat header, footer, general styling samt löpande uppdatering av READme.
+Header och footer har skapats gemensamt genom parkodning där vi alla har deltagit och hjälpt till.
+
+Melody har gjort header responsiv. 
 
