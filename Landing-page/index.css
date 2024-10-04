@@ -33,7 +33,6 @@ a {
 }
 
 #hero p {
-    position: absolute;
     font-size: 30px;
     text-align: center;
     padding: 90px 0 50px 0;
@@ -43,11 +42,8 @@ a {
 }
 
 #hero a {
-    /* color: rgb(180, 67, 38);  */
-    color: #333; /* ska skillja sig från övriga färg palletten */
-    
+    color: #333;
     display: inline-block;
-    transition: transform 0.5s ease-in-out;
 }
 
 #hero a:hover {
@@ -79,7 +75,7 @@ a {
     grid-column: 1;
 }
 
-.gallery p{
+.gallery p {
     grid-row: 1;
     grid-column: 1;
     padding-top: 135px;
@@ -103,11 +99,8 @@ a {
     width: 100vw;
     max-width: 1400px;
     height: 400px;
-    margin: 0 auto;
-    overflow: hidden;
 }
 
-/* Hide radio buttons - have to be styled*/
 input[type="radio"] {
     display: none;
 }
@@ -115,12 +108,12 @@ input[type="radio"] {
 .carousel-container {
     display: flex;
     transition: transform 1s ease-in-out;
-    width: 200%; /* Since we have 2 items, this must be 200% */
+    width: 200%;
     height: 100%;
 }
 
 .carousel-item {
-    min-width: 50%; /* Each item takes 50% of the width since there are two */
+    min-width: 50%;
     height: 100%;
     display: flex;
 }
@@ -155,19 +148,14 @@ input[type="radio"] {
     align-items: center;
 }
 
-.carousel-text h2 {
-    margin-bottom: 10px;
-}
-
 .carousel-control {
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
     color: white;
-    border: none;
     cursor: pointer;
     font-size: 40px;
     transition-duration: 0.5s;
+    transition: transformY(-100%) 0.5s ease-in-out;
 }
 
 .carousel-control.prev {
@@ -181,10 +169,8 @@ input[type="radio"] {
 
 .carousel-control:hover {
     scale: 1.1;
-    top: 51%
 }
 
-/* Move the carousel using radio buttons */
 #slide1:checked ~ .carousel-container {
     transform: translateX(0%);
 }
@@ -197,7 +183,6 @@ input[type="radio"] {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
 }
 
 #instagram-section {
@@ -229,12 +214,11 @@ input[type="radio"] {
 }
 
 #review-section h1 {
-    font-weight: 400; /*borde inte behövas, står i general styling*/
+    font-weight: 400;
 }
 
 #review-wrapper {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
@@ -290,25 +274,9 @@ input[type="radio"] {
         width: 50vw;
     }
 
-    .navbar {
-      flex-wrap: wrap;
-    }
-
-    .nav-left,
-    .nav-right {
-      flex-direction: column;
-      width: 100%;
-      display: none; /* Dölj menyerna */
-    }
-
-    .navbar ul {
-      flex-direction: column;
-      text-align: center;
-    }
-
 }
 
-/* behövs för att instagram bilderna lägger sig på en rad, hellre annan lösning */
+
 @media screen and (max-width: 820px) {
 
     #instragram-img-wrapper {
@@ -322,7 +290,6 @@ input[type="radio"] {
     #instagram-section img {
         width: 98%;
         height: auto;
-        /* margin: 0 auto; */
     }
 
 }
