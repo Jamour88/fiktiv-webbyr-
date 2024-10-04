@@ -98,14 +98,13 @@ p {
 
 .team-photos img,
 .portfolio-images img {
-    transition: transform 0.3s ease; /* Smooth transition */
+    transition: transform 0.3s ease; 
 }
 
 .team-photos img:hover,
 .portfolio-images img:hover {
-    transform: scale(1.2); /* Zooma in lite */
+    transform: scale(1.2); 
 }
-
 
 /* Media queries - Tablet */
 @media screen and (max-width: 1024px) {
