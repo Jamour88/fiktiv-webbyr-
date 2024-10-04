@@ -58,7 +58,6 @@ html {
     transition: color 0.3s ease;
 }
 
-/* Styling for the icons */
 .icon {
     display: inline-block;
     width: 24px;
@@ -93,24 +92,22 @@ h1 {
 .stone-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    /* Two columns */
     gap: 20px;
 }
 
-/* Style for individual boxes */
+
 .stone-item {
     display: flex;
     background-color: #F7F7F7;
     padding: 20px;
-    /* Removed box-shadow and border-radius */
     transition: background-color 0.3s ease;
 }
 
-/* Apply grey background to every other row */
+
 .stone-item:nth-child(4n),
-/* Fourth item */
+
 .stone-item:nth-child(4n-1) {
-    /* Third item */
+   
     background-color: white;
 }
 
@@ -136,7 +133,7 @@ h1 {
 @media (max-width: 768px) {
     .stone-grid {
         grid-template-columns: 1fr;
-        /* Switch to one column on smaller screens */
+      
     }
 
     .stone-item {
@@ -171,12 +168,12 @@ h1 {
     height: 30px;
 }
 
-/* Hide the checkbox input (used for toggling) */
+
 .menu-toggle {
     display: none;
 }
 
-/* Hamburger icon styles */
+
 .hamburger {
     display: none;
     font-size: 30px;
