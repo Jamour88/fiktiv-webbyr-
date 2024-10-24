@@ -109,21 +109,24 @@
     border-radius: 4px;
 }
 
+
+
 .carousel-container {
     position: relative;
-    max-width: 80%;
+    max-width: 100%;
     margin: auto;
     overflow: hidden;
-    border: 0.1px solid rgb(238, 208, 208); ;
+    border: 0.1px solid rgb(238, 208, 208);
 }
 
+/* OBS! Här har jag ändrat flexbox till grids CSS på slidebilderna */
 .carousel {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 130%); /* ändrar slidebilden */
     animation: slide-animation 8s infinite;
 }
 
 .carousel-slide {
-    min-width: 100%;
     box-sizing: border-box;
     position: relative;
 }
@@ -133,13 +136,14 @@
     vertical-align: middle;
 }
 
-@keyframes slide-animation {  /* skapar rullande karusell */
+/* Du kan behålla din animation eller uppdatera den enligt önskemål */
+@keyframes slide-animation {
     0% { transform: translateX(0); }
-    33% { transform: translateX(0); }
-    38% { transform: translateX(-100%); }
-    66% { transform: translateX(-100%); }
-    71% { transform: translateX(-200%); }
-    100% { transform: translateX(-200%); }
+    20% { transform: translateX(-100%); }
+    40% { transform: translateX(-200%); }
+    60% { transform: translateX(-300%); }
+    80% { transform: translateX(-400%); }
+    100% { transform: translateX(0); }
 }
 
 .read-more {
@@ -162,7 +166,7 @@
 /* Media query för surfplattor (768px till 1024px) */
 @media screen and (max-width: 1024px) {
     .portfolio section {
-      flex: 0 0 calc(50% - 20px); /* Två kolumner på surfplattor */
+      flex: 0 0 calc(50% - 20px); /* ger två kolumner på surfplattor */
       max-width: calc(50% - 20px);
     }
   
@@ -183,11 +187,11 @@
   /* Media query för mobiler (mindre än 768px) */
   @media screen and (max-width: 768px) {
     .portfolio {
-      flex-direction: column; /* En kolumn på mobiler */
+      flex-direction: column; 
     }
   
     .portfolio section {
-      flex: 0 0 100%; /* Full bredd */
+      flex: 0 0 100%; 
       max-width: 100%;
     }
   
@@ -206,15 +210,15 @@
   }
 
   .icontext {
-    display: flex;               /* Använd flexbox för att placera element bredvid varandra */
-    flex-wrap: wrap;            /* Gör så att elementen går till nästa rad om det inte finns tillräckligt med plats */
+    display: flex;               
+    flex-wrap: wrap;            /* går till nästa rad om det inte finns tillräckligt med plats */
     justify-content: left;     
 }
 
 .icontext img {
     width: 25px;               
-    height: auto;               /* Behåll proportionerna */
-    margin: 5px;               /* Lägger till lite utrymme runt bilderna */
+    height: auto;              
+    margin: 5px;             
 }
 
 .icontext p {
@@ -222,32 +226,32 @@
     color: rgb(66, 111, 236);
     text-align: left;         
     margin-top: 0px;          
-    width: 100%;                /* Gör så att texten tar hela bredden av sitt föräldraelement */
+    width: 100%;               
 }
 
 .discount-banner {
-    position: fixed;             /* Gör bannern fast på skärmen */
-    right: 0px;                /* ingen avstånd från höger kant */
-    top: 80%;                  /* Avstånd från toppen */
+    position: fixed;             
+    right: 0px;                
+    top: 80%;                  
     background-color: rgb(238, 208, 208); 
-    color: #0f0101;                /* Textfärg (svart) */
-    padding: 5px 10px;        /* Inre marginaler */
-    border-radius: 5px;        /* Rundade hörn */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Lätt skugga för djup */
-    z-index: 1000;             /* Säkerställ att den är över andra element */
-    font-size: 10px;           /* Textstorlek */
-    font-weight: bold;         /* Fet text */
+    color: #0f0101;              
+    padding: 5px 10px;        
+    border-radius: 2px;       
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* skugga för djup */
+    z-index: 1000;            
+    font-size: 10px;           
+    font-weight: bold;       
 }
 
 .discount-banner:hover {
     background-color: #1e58a9; 
-    cursor: pointer;           /* Ändrar muspekaren till en hand */
+    cursor: pointer;           /* muspekaren blir en hand */
     color: #FFF;
 }
 
 .contact-form {
-    display: flex;                     /* Använd flexbox för att arrangera elementen */
-    flex-direction: column;           /* Arrangera elementen vertikalt */
+    display: flex;                     
+    flex-direction: column;           
     margin-top: 10px;                
 }
 
@@ -262,7 +266,7 @@ h2 {
     cursor: pointer;
 }
 
-/* Skapa pseudo-elementet för understrykningen */
+/* understrykningen */
 h2::after {
     content: '';
     position: absolute;
@@ -274,7 +278,7 @@ h2::after {
     transition: width 0.3s ease;
 }
 
-/* När vi hovrar ökar vi bredden på understrykningen */
+/* bredden understrykningen */
 h2:hover::after {
     width: 100%;
 }
